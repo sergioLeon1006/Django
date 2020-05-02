@@ -1,0 +1,2 @@
+Django== 2.2.12
+mongodb+srv://sergio:10062001@sergiocluster-urore.mongodb.net/<nombre bd>?retryWrites=true&w=majority
