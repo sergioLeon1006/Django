@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block contenido %}
+    {% load static %}
+
+    <section class="equipo" id="equipo" style="padding-top:20px">
+      <h2 class="titulo">Nosotros</h2>
+      <div class="nos">
+        <div class="cards-wrapper">
+            <div class="card2">
+              <img src="{% static 'assets/img/imYngbb.jpg' %}" alt="top1" class="image-top" />
+              <img src="{% static 'assets/img/laura.jpg' %}" alt="image1" class="profile-image" />
+              <h1 class="fullname">{{ user1 }}</h1>
+              <h3 class="job">{{ profecion }}</h3>
+              <h3 class="job">{{ profecion2 }}</h3>
+              <p class="about-me">{{ about }}</p>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card2">
+              <img src="{% static 'assets/img/imYngbb.jpg' %}" alt="top1" class="image-top" />
+              <img src="{% static 'assets/img/sergio.jpg' %}" alt="image1" class="profile-image" />
+              <h1 class="fullname">{{ user2 }}</h1>
+              <h3 class="job">{{ profecion }}</h3>
+              <h3 class="job">{{ profecion2 }}</h3>
+              <p class="about-me">{{ about }}</p>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.facebook.com/sergio.saldarriaga.100"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card2">
+              <img src="{% static 'assets/img/imYngbb.jpg' %}" alt="top1" class="image-top" />
+              <img src="{% static 'assets/img/denisse.jpg' %}" alt="image1" class="profile-image" />
+              <h1 class="fullname">{{ user3 }}</h1>
+              <h3 class="job">{{ profecion }}</h3>
+              <h3 class="job">{{ profecion2 }}</h3>
+              <p class="about-me">{{ about }}</p>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100002734831910"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

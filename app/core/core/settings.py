@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     #mis app
     'ckeditor',
     'userdata',
-    #'projects',
+    'projects',
+    'src',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "src/static/assets/media")
 
 CKEDITOR_CONFIGS = {
     'default': {
@@ -136,3 +139,7 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '95ae63e8c3ddd7'
+EMAIL_HOST_PASSWORD = '1fcfb27f45dafa'
+EMAIL_PORT = '2525'

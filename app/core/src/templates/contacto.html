@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block contenido %}
+    {% load static %}
+        <section class="inicio-header">
+            <img src="{% static 'assets/img/inicio.jpg' %}" alt="" >
+            <div class="texto-encima">Sistema de Gestión Virtual de Aprendices</div>
+        </section>
+<section style="padding-top:120px" class="container ">
+<div>
+    <!--<form action="" method="post">
+        {% csrf_token %}
+        {{ formulario.as_p }}
+         <button class="btn btn-primary " name="enviar" type="submit">Submit form</button>
+    </form> -->
+  <form method="post" action="#">
+      {% csrf_token %}
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">Correo</label>
+        {{ formulario.correo }}
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault02">Tu nombre</label>
+      {{ formulario.usuario }}
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Mensaje</label>
+      {{ formulario.mensaje }}
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">Tipo peticion</label>
+      {{ formulario.tipomensaje }}
+  </div>
+  <div class="form-group container">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary " type="submit">Submit form</button>
+    {% if 'ok' in request.GET %}
+    <div class="pl-3 pt-2">
+      <spam class=" alert alert-success">Hemos recibido tu mensaje</spam>
+      </div>
+    {% elif 'fail' in request.GET %}
+    <div class="pl-3 pt-2">
+      <spam class=" alert alert-danger">No se pudo enviar tu mensaje</spam>
+      </div>
+  {% endif %}
+  </form>
+
+</div>
+</section>
+
+{% endblock %}

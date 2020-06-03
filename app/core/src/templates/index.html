@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block contenido %}
+    {% load static %}
+
+    <main>
+        <section class="inicio-header">
+            <img src="{% static 'assets/img/inicio.jpg' %}" alt="" >
+            <div class="texto-encima">Sistema de Gestión Virtual de Aprendices</div>
+        </section>
+        <section class="contenedor sobre-nosotros" id="sobre-nosotros" style="padding-top:50px">
+            <h2 class="titulo">{{ tituloIni }}</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="{% static 'assets/img/sav.png' %}" alt="" class="imagen-sobre">
+                <div class="contenido-textos">
+                    <h3><span>1</span>SENA</h3>
+                    <p>{{ sobre }}</p>
+                </div>
+            </div>
+        </section>
+        <section class="caracteristicas" id="caracteristicas" >
+            <div class="contenedor">
+                <h2 class="titulo">Características</h2>
+                <div class="caracteristicas-cont">
+                    <div class="caracteristicas-ind">
+                        <img src="{% static 'assets/img/eficaz.svg' %}" alt="">
+                        <h3>Eficaz</h3>
+                        <p>Adaptado para una buena búsqueda de la información.</p>
+                    </div>
+                    <div class="caracteristicas-ind">
+                        <img src="{% static 'assets/img/seguro.svg' %}" alt="">
+                        <h3>Seguro</h3>
+                        <p>Cuida la información de cada uno de los usuarios permitiendo que sea un sitio web confiable.</p>
+                    </div>
+                    <div class="caracteristicas-ind">
+                        <img src="{% static 'assets/img/orden.svg' %}" alt="">
+                        <h3>Organizado</h3>
+                        <p>Diseño sencillo y modelado para una mayor facilidad de uso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="objetivos contenedor" id="objetivos">
+            <h2 class="titulo">Objetivo</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'assets/img/funciones.svg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <p>{{ funcion }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 Generos=(
-    (("Femenino"),("F")),
-    ( ("Masculino"),("M")),
-    (("Otro"),("O"))
+    (("F"),("Femenino")),
+    ( ("M"),("Masculino")),
+    (("O"),("Otro"))
 )
