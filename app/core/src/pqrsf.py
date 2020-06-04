@@ -1,6 +1,6 @@
 Pqrsf=(
-    (("P"),("Peticion")),
-    ( ("Q"),("Queja")),
-    (("R"),("Reclamo")),
-    (("S"), ("Solicitud"))
+    (("Peticion"),("Petición")),
+    ( ("Queja"),("Queja")),
+    (("Reclamo"),("Reclamo")),
+    (("Solicitud"), ("Solicitud"))
 )
