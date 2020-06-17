@@ -1,2 +1,1 @@
 Django== 2.2.12
-mongodb+srv://sergio:10062001@sergiocluster-urore.mongodb.net/<portafolio>?retryWrites=true&w=majority
