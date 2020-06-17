@@ -11,7 +11,7 @@
               <img src="{% static 'assets/img/laura.jpg' %}" alt="image1" class="profile-image" />
               <h1 class="fullname">{{ user1 }}</h1>
               <h3 class="job">{{ profecion }}</h3>
-              <h3 class="job">{{ profecion2 }}</h3>
+              <h3 class="job"> {{ datosUser.telUser }}</h3>
               <p class="about-me">{{ about }}</p>
               <ul class="social-icons">
                 <li>
@@ -35,9 +35,12 @@
             <div class="card2">
               <img src="{% static 'assets/img/imYngbb.jpg' %}" alt="top1" class="image-top" />
               <img src="{% static 'assets/img/sergio.jpg' %}" alt="image1" class="profile-image" />
-              <h1 class="fullname">{{ user2 }}</h1>
-              <h3 class="job">{{ profecion }}</h3>
-              <h3 class="job">{{ profecion2 }}</h3>
+              {% for datosUser in datosUser %}
+              <h1 class="fullname">{{ datosUser.nombreUser }}</h1>
+              <h3 class="job">{{ datosUser.profecionUser }}</h3>
+              <h3 class="job">{{ datosUser.telUser }}</h3>
+              <h4 class="job">{{ datosUser.direccion }}</h4>
+              {% endfor %}
               <p class="about-me">{{ about }}</p>
               <ul class="social-icons">
                 <li>
